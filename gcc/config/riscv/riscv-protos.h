@@ -95,6 +95,9 @@ extern bool riscv_hard_regno_rename_ok (unsigned, unsigned);
 
 rtl_opt_pass * make_pass_shorten_memrefs (gcc::context *ctxt);
 
+/* New pass - merge loadstores */
+rtl_opt_pass * make_pass_merge_loadstores (gcc::context *ctxt);
+
 /* Information about one CPU we know about.  */
 struct riscv_cpu_info {
   /* This CPU's canonical name.  */
